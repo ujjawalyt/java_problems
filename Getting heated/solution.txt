@@ -1,0 +1,29 @@
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+        int tc = sc.nextInt();
+        for(int i=0;i<tc;i++){
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+            int c = sc.nextInt();
+           gettingHeated( a,  b , c) ;
+        }
+       
+        
+    }
+    
+public static void gettingHeated(int a, int b ,int c){
+    
+    int max = Math.max(a,c);
+    // int min = Math.min(b,max);
+    
+    if(max<=b){
+        System.out.println("AC");
+    }else{
+          System.out.println("No AC");  
+    }
+
+}
+    
+}
