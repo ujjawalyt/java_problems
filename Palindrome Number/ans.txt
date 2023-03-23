@@ -1,0 +1,46 @@
+convert integer to string
+
+class Solution {
+    public boolean isPalindrome(int x) {
+        
+
+        String str = String.valueOf(x);
+        int left =0;
+        int right = str.length()-1;
+
+        while(left<=right){
+     if(str.charAt(left)==str.charAt(right)){
+         left++;
+         right--;
+     }else{
+         return false;
+     }
+
+        }
+        return true;
+        
+    }
+}
+
+
+without converting integer to String 
+
+class Solution {
+    public boolean isPalindrome(int x) {
+        s
+         int rev =0;
+        int original = x;
+        while(x !=0){
+            int num = x % 10;
+            rev = rev *10 + num;
+            x = x/10;
+
+        }
+
+        if(original >= 0 && original == rev){
+            return true;
+        }
+
+        return false;
+    }
+}
